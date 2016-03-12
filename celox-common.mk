@@ -29,6 +29,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 # Bootanimation
 TARGET_SCREEN_WIDTH := 480
 TARGET_SCREEN_HEIGHT := 800
+TARGET_BOOTANIMATION_HALF_RES := true
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
