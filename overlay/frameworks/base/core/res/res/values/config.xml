@@ -122,6 +122,14 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareKeys">79</integer>
+
+    <!-- Control path for disabling the capacitive hardware keys, if they exist.
+         For example: "/proc/touchpanel/keypad_enable"  -->
+    <string name="config_deviceHardwareKeysFilePath" translatable="false">/sys/class/sec/sec_touchkey/keypad_enable</string>
+
+    <!-- Max Brightness path for the capacitive hardware key lights.
+         For example: "/sys/class/leds/button-backlight/max_brightness"  -->
+    <string name="config_deviceHardwareKeyLightsFilePath" translatable="false">/sys/class/leds/button-backlight/max_brightness</string>
     
     <!-- Configure mobile tcp buffer sizes in the form:
          rat-name:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
